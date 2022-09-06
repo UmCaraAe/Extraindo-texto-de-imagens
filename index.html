@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Extração de Texto</title>
+</head>
+<body>
+    <section class="fundo">
+        <div class="container2">
+            <div class="esquerda">
+                <label for="arquivo"></label>
+                <input type="file" name="arquivo" accept=".pdf, .png, .jpg" id="arquivo">
+                <button class="addImagens">Inserir arquivo</button>
+                <textarea class="text"></textarea>
+            </div>
+            <div class="direita">
+                <img src="" alt="" class="preview">
+                <div class="barraProgresso"></div>
+            </div>
+        </div>
+        <span class="copy">&copy; Erick Justino de Oliveira, 2022.</span>
+    </section>
+    
+    <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
